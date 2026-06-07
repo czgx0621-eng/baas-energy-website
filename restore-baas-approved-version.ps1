@@ -2,7 +2,7 @@
   [string]$ProjectRoot = (Split-Path -Parent $MyInvocation.MyCommand.Path)
 )
 
-$Snapshot = Join-Path $ProjectRoot 'saved-versions\baas-advanced-tailwind-git-baseline-20260607-2305'
+$Snapshot = Join-Path $ProjectRoot 'saved-versions\baas-polish-three-issues-20260608-verified'
 if (-not (Test-Path $Snapshot)) {
   throw "Snapshot not found: $Snapshot"
 }
@@ -16,4 +16,4 @@ foreach ($item in $items) {
   Copy-Item -LiteralPath (Join-Path $Snapshot $item) -Destination $ProjectRoot -Recurse -Force
 }
 
-Write-Host 'Restored BAAS approved version: baas-advanced-tailwind-git-baseline-20260607-2305'
+Write-Host 'Restored BAAS approved version: baas-polish-three-issues-20260608-verified'

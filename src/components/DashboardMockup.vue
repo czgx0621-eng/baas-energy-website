@@ -25,6 +25,12 @@ const sites = [
   { name: 'Edge Node 04', state: { en: 'Monitoring', zh: '监测中' }, load: '420 kW', tone: 'watch' },
 ]
 
+const readiness = [
+  { label: { en: 'Microgrid ready', zh: '微电网就绪' }, value: '92%' },
+  { label: { en: 'Peak guard', zh: '峰值保护' }, value: 'Active' },
+  { label: { en: 'VPP standby', zh: 'VPP 待命' }, value: 'Ready' },
+]
+
 const events = [
   { time: '14:20', text: { en: 'Storage dispatch window prepared', zh: '储能调度窗口已准备' } },
   { time: '14:35', text: { en: 'Peak demand threshold protected', zh: '峰值需量阈值已保护' } },
@@ -105,6 +111,18 @@ const events = [
           <i :class="site.tone" />
           <span>{{ site.name }}<em>{{ site.load }}</em></span>
           <strong>{{ t(site.state) }}</strong>
+        </p>
+      </section>
+
+      <section class="dashboard-readiness">
+        <div class="chart-title">{{ t({ en: 'Control readiness', zh: '控制就绪度' }) }}</div>
+        <div class="readiness-ring">
+          <strong>87</strong>
+          <span>{{ t({ en: 'dispatch score', zh: '调度评分' }) }}</span>
+        </div>
+        <p v-for="item in readiness" :key="t(item.label)">
+          <span>{{ t(item.label) }}</span>
+          <strong>{{ item.value }}</strong>
         </p>
       </section>
 

@@ -1,7 +1,6 @@
 <script setup>
 import CtaBand from '../components/CtaBand.vue'
 import PageHero from '../components/PageHero.vue'
-import SectionIntro from '../components/SectionIntro.vue'
 import { companyIntro } from '../data/companyIntro'
 import { useLanguage } from '../composables/useLanguage'
 
@@ -28,11 +27,12 @@ const { t } = useLanguage()
   </section>
 
   <section class="about-beliefs section-pad">
-    <SectionIntro
-      :eyebrow="t({ en: 'What we believe', zh: '我们相信' })"
-      :title="t({ en: 'Energy capacity is becoming part of the AI infrastructure stack.', zh: '能源容量正在成为 AI 基础设施栈的一部分。' })"
-    />
-    <div>
+    <div class="about-beliefs-intro">
+      <p class="eyebrow">{{ t({ en: 'What we believe', zh: '我们相信' }) }}</p>
+      <h2>{{ t({ en: 'Energy capacity is now an operating layer for AI infrastructure.', zh: '能源容量正在成为 AI 基础设施的运营层。' }) }}</h2>
+      <p>{{ t({ en: 'BAAS treats power capacity as something that can be planned, deployed, monitored, and dispatched alongside compute capacity.', zh: 'BAAS 将电力容量视为可规划、可部署、可监测、可调度的基础设施能力，与算力容量协同运行。' }) }}</p>
+    </div>
+    <div class="about-belief-grid">
       <article v-for="(belief, index) in companyIntro.beliefs" :key="t(belief)">
         <span>0{{ index + 1 }}</span>
         <h3>{{ t(belief) }}</h3>
