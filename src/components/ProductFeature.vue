@@ -1,6 +1,7 @@
 <script setup>
 import { ArrowUpRight } from '@lucide/vue'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 defineProps({ product: Object, reverse: Boolean })
 const { t } = useLanguage()
@@ -9,7 +10,7 @@ const { t } = useLanguage()
 <template>
   <article :class="['product-feature', { reverse }]">
     <div class="product-feature-media">
-      <img :src="product.image" :alt="product.name" loading="lazy" />
+      <img :src="assetPath(product.image)" :alt="product.name" loading="lazy" />
       <span>{{ product.eyebrow ? t(product.eyebrow) : product.name }}</span>
     </div>
     <div class="product-feature-copy">

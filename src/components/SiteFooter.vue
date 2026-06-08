@@ -3,6 +3,7 @@ import { ArrowUpRight } from '@lucide/vue'
 import { brand, navItems } from '../data/siteContent'
 import { companyIntro } from '../data/companyIntro'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 const { t } = useLanguage()
 
@@ -16,7 +17,7 @@ function scrollToTop() {
     <div class="footer-top">
       <div class="footer-brand">
         <RouterLink to="/" aria-label="BAAS ENERGY home">
-          <img class="footer-logo" src="/images/brand/baas-energy-logo-dark.png" :alt="brand.name" />
+          <img class="footer-logo" :src="assetPath('/images/brand/baas-energy-logo-dark.png')" :alt="brand.name" />
         </RouterLink>
         <p>{{ t(companyIntro.footerLine) }}</p>
       </div>

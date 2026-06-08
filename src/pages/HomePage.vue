@@ -8,13 +8,14 @@ import ProductFeature from '../components/ProductFeature.vue'
 import SectionIntro from '../components/SectionIntro.vue'
 import { home, painPoints, products, solutions } from '../data/siteContent'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 const { t } = useLanguage()
 </script>
 
 <template>
   <section class="home-hero">
-    <img src="/images/photos/hero-campus.png" alt="AI data center campus with modular energy infrastructure" fetchpriority="high" />
+    <img :src="assetPath('/images/photos/hero-campus.png')" alt="AI data center campus with modular energy infrastructure" fetchpriority="high" />
     <div class="home-hero-shade" />
     <div class="home-hero-content">
       <p class="eyebrow light">{{ t(home.hero.eyebrow) }}</p>
@@ -49,7 +50,7 @@ const { t } = useLanguage()
       </div>
     </div>
     <div class="editorial-media tall">
-      <img src="/images/photos/enterprise-ai-room.png" alt="Enterprise AI server room" loading="lazy" />
+      <img :src="assetPath('/images/photos/enterprise-ai-room.png')" alt="Enterprise AI server room" loading="lazy" />
       <div class="media-caption">
         <span>AI workload</span>
         <span>Power capacity</span>
@@ -87,7 +88,7 @@ const { t } = useLanguage()
     />
     <div class="solution-mosaic">
       <RouterLink v-for="solution in solutions" :key="solution.slug" :to="`/solutions/${solution.slug}`">
-        <img :src="solution.image" :alt="t(solution.title)" loading="lazy" />
+        <img :src="assetPath(solution.image)" :alt="t(solution.title)" loading="lazy" />
         <div class="solution-shade" />
         <div>
           <p>{{ t(solution.intro) }}</p>
@@ -107,7 +108,7 @@ const { t } = useLanguage()
   </section>
 
   <section class="partner-banner">
-    <img src="/images/photos/partners-engineering.png" alt="Energy infrastructure engineering partners" loading="lazy" />
+    <img :src="assetPath('/images/photos/partners-engineering.png')" alt="Energy infrastructure engineering partners" loading="lazy" />
     <div class="partner-banner-content">
       <p class="eyebrow light">{{ t({ en: 'Partner-ready integration', zh: '面向伙伴的开放集成' }) }}</p>
       <h2>{{ t({ en: 'Built to work with the AI infrastructure ecosystem.', zh: '为 AI 基础设施生态协作而设计。' }) }}</h2>

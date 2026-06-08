@@ -5,6 +5,7 @@ import PageHero from '../components/PageHero.vue'
 import SectionIntro from '../components/SectionIntro.vue'
 import { solutions } from '../data/siteContent'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 const { t } = useLanguage()
 </script>
@@ -23,7 +24,7 @@ const { t } = useLanguage()
     />
     <div class="solution-index">
       <RouterLink v-for="(solution, index) in solutions" :key="solution.slug" :to="`/solutions/${solution.slug}`">
-        <div class="solution-index-image"><img :src="solution.image" :alt="t(solution.title)" loading="lazy" /></div>
+        <div class="solution-index-image"><img :src="assetPath(solution.image)" :alt="t(solution.title)" loading="lazy" /></div>
         <div class="solution-index-copy">
           <span>0{{ index + 1 }}</span>
           <p class="eyebrow">{{ t(solution.intro) }}</p>

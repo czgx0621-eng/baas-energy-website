@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { Globe2, Menu, X } from '@lucide/vue'
 import { brand, navItems, ui } from '../data/siteContent'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 const open = ref(false)
 const { isZh, t, toggleLanguage } = useLanguage()
@@ -20,7 +21,7 @@ function close() {
 <template>
   <header class="site-header">
     <RouterLink class="brand" to="/" @click="close">
-      <img class="brand-logo" src="/images/brand/baas-energy-logo-dark.png" :alt="brand.name" />
+      <img class="brand-logo" :src="assetPath('/images/brand/baas-energy-logo-dark.png')" :alt="brand.name" />
     </RouterLink>
 
     <nav :class="{ open }" aria-label="Main navigation">

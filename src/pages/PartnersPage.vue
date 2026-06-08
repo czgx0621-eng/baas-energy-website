@@ -5,6 +5,7 @@ import PageHero from '../components/PageHero.vue'
 import SectionIntro from '../components/SectionIntro.vue'
 import { partnerTypes } from '../data/siteContent'
 import { useLanguage } from '../composables/useLanguage'
+import { assetPath } from '../utils/assets'
 
 const { t } = useLanguage()
 </script>
@@ -35,7 +36,7 @@ const { t } = useLanguage()
 
   <section class="partner-model section-pad">
     <div class="editorial-media">
-      <img src="/images/photos/idc-retrofit.png" alt="Engineers delivering AI energy infrastructure" loading="lazy" />
+      <img :src="assetPath('/images/photos/idc-retrofit.png')" alt="Engineers delivering AI energy infrastructure" loading="lazy" />
     </div>
     <div>
       <p class="eyebrow light">{{ t({ en: 'Partner-ready integration', zh: '面向伙伴的开放集成' }) }}</p>
