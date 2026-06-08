@@ -10,7 +10,7 @@ import AboutPage from './pages/AboutPage.vue'
 import ContactPage from './pages/ContactPage.vue'
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior() {
     return { top: 0, behavior: 'smooth' }
   },
