@@ -20,6 +20,7 @@ function scrollToTop() {
           <img class="footer-logo" :src="assetPath('/images/brand/baas-energy-logo-dark.png')" :alt="brand.name" />
         </RouterLink>
         <p>{{ t(companyIntro.footerLine) }}</p>
+        <a class="footer-email" href="mailto:contact@baas-energy.com">contact@baas-energy.com</a>
       </div>
       <nav aria-label="Footer navigation">
         <RouterLink v-for="item in navItems" :key="item.path" :to="item.path" @click="scrollToTop">{{ t(item.label) }}</RouterLink>

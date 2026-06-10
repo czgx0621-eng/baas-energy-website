@@ -44,7 +44,13 @@ function submit() {
         <span><CheckCircle2 :size="18" /> {{ t({ en: 'Product configuration', zh: '产品配置' }) }}</span>
         <span><CheckCircle2 :size="18" /> {{ t({ en: 'Partner integration', zh: '伙伴集成' }) }}</span>
       </div>
-      <div class="contact-email"><Mail :size="18" /> {{ t({ en: 'Site assessment and partnership inquiries', zh: '站点评估与合作咨询' }) }}</div>
+      <div class="contact-email">
+        <Mail :size="18" />
+        <div>
+          <span>{{ t({ en: 'Site assessment and partnership inquiries', zh: '站点评估与合作咨询' }) }}</span>
+          <a href="mailto:contact@baas-energy.com">contact@baas-energy.com</a>
+        </div>
+      </div>
     </aside>
 
     <form v-if="!submitted" @submit.prevent="submit">
