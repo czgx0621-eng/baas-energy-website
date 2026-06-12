@@ -21,7 +21,7 @@ function close() {
 <template>
   <header class="site-header">
     <RouterLink class="brand" to="/" @click="close">
-      <img class="brand-logo" :src="assetPath('/images/brand/baas-energy-logo-dark.png')" :alt="brand.name" />
+      <img class="brand-logo" :src="assetPath('/images/brand/baas-energy-logo-dark-smooth.png')" :alt="brand.name" />
     </RouterLink>
 
     <nav :class="{ open }" aria-label="Main navigation">

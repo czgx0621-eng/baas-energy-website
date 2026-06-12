@@ -128,6 +128,9 @@ main {
 .brand-logo {
   width: clamp(158px, 13vw, 196px);
   height: auto;
+  image-rendering: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .site-header nav {
@@ -1811,6 +1814,9 @@ main {
 .footer-logo {
   width: min(270px, 100%);
   height: auto;
+  image-rendering: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .footer-brand p {

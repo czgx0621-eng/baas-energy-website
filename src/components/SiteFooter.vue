@@ -17,7 +17,7 @@ function scrollToTop() {
     <div class="footer-top">
       <div class="footer-brand">
         <RouterLink to="/" aria-label="BAAS ENERGY home">
-          <img class="footer-logo" :src="assetPath('/images/brand/baas-energy-logo-dark.png')" :alt="brand.name" />
+          <img class="footer-logo" :src="assetPath('/images/brand/baas-energy-logo-dark-smooth.png')" :alt="brand.name" />
         </RouterLink>
         <p>{{ t(companyIntro.footerLine) }}</p>
         <a class="footer-email" href="mailto:contact@baas-energy.com">contact@baas-energy.com</a>
