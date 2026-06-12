@@ -30,10 +30,10 @@ export const ui = {
 
 export const home = {
   hero: {
-    title: { en: 'Energy OS for AI Infrastructure', zh: 'AI 算力基础设施的能源操作系统' },
+    title: { en: 'Energy Capacity Platform for AI Infrastructure', zh: 'AI 算力基础设施的能源容量平台' },
     body: {
-      en: 'BAAS ENERGY combines intelligent power gateways, modular energy pods, and compute-energy orchestration software to help distributed AI nodes connect faster, operate cheaper, and become grid-flexible assets.',
-      zh: 'BAAS ENERGY 提供智能配电网关、模块化能源舱和算力能源调度平台，让分布式 AI 算力节点更快接电、更低成本运行，并成为可调度的电网资产。',
+      en: 'BAAS ENERGY provides energy capacity products and an operating platform for AI data centers, high-density data facilities, and power-constrained energy-intensive sites, helping customers access stable, scalable, and operable power capacity faster.',
+      zh: 'BAAS ENERGY 面向 AIDC、高密度数据中心及电力受限的高能耗场站，提供能源容量产品与运营平台，帮助客户更快获得稳定、可扩展、可运营的电力容量。',
     },
     tags: [
       { en: 'Faster Power Access', zh: '更快接电' },
