@@ -7,7 +7,7 @@ export const brand = {
 }
 
 export const navItems = [
-  { path: '/platform', label: { en: 'Platform', zh: '平台' } },
+  { path: '/platform', label: { en: 'Power to Compute', zh: '电力到算力' } },
   { path: '/solutions', label: { en: 'Solutions', zh: '解决方案' } },
   { path: '/products', label: { en: 'Products', zh: '产品' } },
   { path: '/partners', label: { en: 'Partners', zh: '合作伙伴' } },
@@ -52,13 +52,14 @@ export const home = {
     },
   },
   platform: {
+    eyebrow: { en: 'Power to Compute', zh: '电力到算力' },
     title: {
-      en: 'A three-layer Energy OS for distributed AI nodes.',
-      zh: '面向分布式 AI 节点的三层能源操作系统。',
+      en: 'From Power Capacity to AI Compute Delivery',
+      zh: '从电力容量到 AI 算力交付',
     },
     body: {
-      en: 'BAAS coordinates the gateway, modular energy assets, and PowerFlex OS into one operating layer for AI compute sites.',
-      zh: 'BAAS 将智能网关、模块化能源资产和 PowerFlex OS 协同为面向 AI 算力站点的统一能源操作层。',
+      en: 'BAAS ENERGY connects power access, modular energy capacity, site control, and compute loads to help AI data centers, high-density facilities, and power-constrained sites turn available power into stable, scalable, and operable AI infrastructure faster.',
+      zh: 'BAAS ENERGY 将电力接入、模块化能源容量、站点控制与算力负载协同起来，帮助 AIDC、高密度数据中心及电力受限场站，把可用电力更快转化为稳定、可扩展、可运营的 AI 算力基础设施。',
     },
   },
   operating: {
@@ -69,6 +70,131 @@ export const home = {
     body: {
       en: 'BAAS provides the gateway, modular energy assets, software platform, and integration standards needed to turn AI compute sites into controllable and optimizable energy systems.',
       zh: 'BAAS 提供智能网关、模块化能源资产、软件平台和集成标准，将 AI 算力站点转化为可控制、可优化、可持续运营的能源系统。',
+    },
+  },
+}
+
+export const powerToCompute = {
+  hero: {
+    eyebrow: { en: 'Power to Compute', zh: '电力到算力' },
+    title: {
+      en: 'Turn power capacity into deployable AI compute.',
+      zh: '把电力容量转化为可部署的 AI 算力。',
+    },
+    body: {
+      en: 'AI infrastructure is no longer delivered by servers alone. It depends on how fast a site can secure power, stabilize high-density loads, coordinate energy assets, and operate compute capacity with confidence.',
+      zh: 'AI 基础设施不再只是服务器交付问题，而是场站能否快速获得电力、稳定支撑高密度负载、协同能源资产，并将算力容量持续运营起来的问题。',
+    },
+  },
+  why: {
+    eyebrow: { en: 'Why it matters', zh: '为什么重要' },
+    title: {
+      en: 'Power is becoming the delivery constraint for AI infrastructure.',
+      zh: '电力正在成为 AI 基础设施交付的关键约束。',
+    },
+    body: {
+      en: 'AIDC and high-density data facilities need a practical operating bridge between utility power, on-site energy assets, and compute deployment. BAAS focuses on this bridge.',
+      zh: 'AIDC 与高密度数据中心需要一条现实可落地的路径，把电网电力、现场能源资产与算力部署连接起来。BAAS 专注于构建这条桥。',
+    },
+    items: [
+      {
+        title: { en: 'Power access takes longer than compute cycles', zh: '接电周期慢于算力部署节奏' },
+        body: { en: 'Grid interconnection, distribution upgrades, and site readiness often become the gating path before GPU capacity can go live.', zh: '电网接入、配电扩容和现场条件往往成为 GPU 算力上线前的关键路径。' },
+      },
+      {
+        title: { en: 'High-density loads stress existing facilities', zh: '高密度负载考验既有场站' },
+        body: { en: 'AI rooms and data centers face higher peak demand, backup requirements, power-quality risk, and thermal-energy coordination pressure.', zh: 'AI 机房和数据中心面临更高峰值负载、备电要求、电能质量风险和能算协同压力。' },
+      },
+      {
+        title: { en: 'Energy assets need one operating language', zh: '能源资产需要统一运营语言' },
+        body: { en: 'Grid, storage, backup power, renewable interfaces, and compute loads need to be planned and operated as one system.', zh: '电网、储能、备电、绿电接口与算力负载，需要以同一种运营语言进行规划和协同。' },
+      },
+      {
+        title: { en: 'Compute capacity must be operable after delivery', zh: '算力交付之后还必须可运营' },
+        body: { en: 'Power capacity is valuable only when it can remain visible, controllable, resilient, and ready for future flexibility.', zh: '电力容量只有在可观测、可控制、可持续运行，并具备未来灵活性时，才能真正支撑算力价值。' },
+      },
+    ],
+  },
+  model: {
+    eyebrow: { en: 'Power to Compute model', zh: 'Power to Compute 模型' },
+    title: {
+      en: 'A conversion path from available power to operating compute capacity.',
+      zh: '从可用电力到可运营算力容量的转化路径。',
+    },
+    body: {
+      en: 'BAAS connects physical power sources, modular energy capacity, site-level control, and AI compute loads into one deployable infrastructure path.',
+      zh: 'BAAS 将实体电力来源、模块化能源容量、站点级控制与 AI 算力负载连接成一条可部署的基础设施路径。',
+    },
+    steps: [
+      { title: { en: 'Power Source', zh: '电力来源' }, body: { en: 'Grid, solar, gas, storage, and backup interfaces.', zh: '电网、光伏、燃气、储能和备电接口。' } },
+      { title: { en: 'Energy Capacity', zh: '能源容量' }, body: { en: 'Modular assets configured for capacity, resilience, and expansion.', zh: '围绕容量、韧性和扩展配置模块化能源资产。' } },
+      { title: { en: 'Site Control', zh: '站点控制' }, body: { en: 'Gateway visibility and PowerFlex OS coordination.', zh: '通过 Gateway 可视化与 PowerFlex OS 协同。' } },
+      { title: { en: 'Compute Load', zh: '算力负载' }, body: { en: 'GPU clusters, AIDC rooms, and high-density racks.', zh: 'GPU 集群、AIDC 机房和高密度机架。' } },
+      { title: { en: 'Operable AI Infrastructure', zh: '可运营 AI 基础设施' }, body: { en: 'Power-aware sites ready for deployment and long-term operation.', zh: '具备能源感知能力、可部署并可持续运营的场站。' } },
+    ],
+  },
+  demo: {
+    sources: [
+      { en: 'Grid', zh: '电网' },
+      { en: 'Solar / Gas', zh: '光伏 / 燃气' },
+      { en: 'BESS', zh: '储能' },
+      { en: 'Backup Power', zh: '备用电源' },
+    ],
+    layers: [
+      { title: { en: 'BAAS Gateway', zh: 'BAAS Gateway' }, body: { en: 'Power visibility and equipment interface', zh: '电力可视化与设备接口' } },
+      { title: { en: 'AI Energy Pod', zh: 'AI Energy Pod' }, body: { en: 'Modular capacity and resilience layer', zh: '模块化容量与韧性层' } },
+      { title: { en: 'PowerFlex OS', zh: 'PowerFlex OS' }, body: { en: 'Compute-energy coordination logic', zh: '算力能源协同逻辑' } },
+    ],
+    outputs: [
+      { en: 'AIDC', zh: 'AIDC' },
+      { en: 'GPU Cluster', zh: 'GPU 集群' },
+      { en: 'Compute Rack', zh: '算力机架' },
+    ],
+  },
+  delivery: {
+    eyebrow: { en: 'Commercial and delivery model', zh: '商业与交付模式' },
+    title: {
+      en: 'A practical delivery system, not a one-off energy project.',
+      zh: '不是一次性能源项目，而是一套可复制的交付系统。',
+    },
+    body: {
+      en: 'BAAS packages assessment, capacity products, operating software, partner delivery, and ongoing optimization into a repeatable model for AI infrastructure sites.',
+      zh: 'BAAS 将站点评估、容量产品、运营软件、伙伴交付和持续优化组织成面向 AI 基础设施场站的可复制模式。',
+    },
+    items: [
+      { title: { en: 'Site Assessment', zh: '站点评估' }, body: { en: 'Power capacity, load profile, backup needs, deployment schedule, and constraint mapping.', zh: '评估电力容量、负载特征、备电需求、部署节奏和约束边界。' } },
+      { title: { en: 'Capacity Products', zh: '容量产品' }, body: { en: 'Gateway, energy pod, power conversion, storage, and interface modules configured for the site.', zh: '围绕场站配置 Gateway、能源舱、电力变换、储能和接口模块。' } },
+      { title: { en: 'Operating Platform', zh: '运营平台' }, body: { en: 'PowerFlex OS connects site signals, asset status, and compute-energy coordination rules.', zh: 'PowerFlex OS 连接站点信号、资产状态和能算协同规则。' } },
+      { title: { en: 'Partner Delivery', zh: '伙伴交付' }, body: { en: 'Work with engineering, equipment, data center, and energy partners through defined interfaces.', zh: '通过标准接口与工程、设备、数据中心和能源伙伴协同交付。' } },
+      { title: { en: 'Continuous Optimization', zh: '持续优化' }, body: { en: 'Operate the energy layer as site requirements, loads, and grid conditions evolve.', zh: '随着场站需求、负载和电网条件变化，持续运营能源层。' } },
+    ],
+  },
+  scenarios: {
+    eyebrow: { en: 'Deployment scenarios', zh: '部署场景' },
+    title: {
+      en: 'Built for sites where power capacity decides compute delivery.',
+      zh: '服务于由电力容量决定算力交付节奏的场站。',
+    },
+    body: {
+      en: 'The same Power to Compute logic can be adapted across new AI data centers, existing high-density facilities, retrofits, campus compute, and edge inference nodes.',
+      zh: '同一套电力到算力逻辑，可适配新建 AI 数据中心、既有高密度机房、IDC 改造、园区智算和边缘推理节点。',
+    },
+    items: [
+      { title: { en: 'AIDC', zh: 'AIDC' }, body: { en: 'Power capacity planning for new AI data center deployment.', zh: '面向新建 AI 数据中心的电力容量规划。' }, image: '/images/photos/hero-campus.png' },
+      { title: { en: 'High-density data facilities', zh: '高密度数据中心' }, body: { en: 'Energy layer support for higher rack density and backup requirements.', zh: '支撑更高机柜密度和备电要求的能源层。' }, image: '/images/photos/enterprise-ai-room.png' },
+      { title: { en: 'IDC GPU retrofit', zh: 'IDC GPU 改造' }, body: { en: 'A controlled path from legacy server loads to GPU workloads.', zh: '从传统服务器负载到 GPU 负载的可控升级路径。' }, image: '/images/photos/idc-retrofit.png' },
+      { title: { en: 'Campus AI compute', zh: '园区智算' }, body: { en: 'Coordinate distributed compute, storage, and campus energy assets.', zh: '协同分布式算力、储能和园区能源资产。' }, image: '/images/photos/campus-compute.png' },
+      { title: { en: 'Edge inference nodes', zh: '边缘推理节点' }, body: { en: 'Standardized power support for smaller distributed AI sites.', zh: '为小型分布式 AI 场站提供标准化电力支撑。' }, image: '/images/photos/edge-inference.png' },
+    ],
+  },
+  cta: {
+    title: {
+      en: 'Assess how your site can turn power into compute capacity.',
+      zh: '评估您的场站如何把电力转化为算力容量。',
+    },
+    body: {
+      en: 'BAAS can review your power constraints, AI deployment plan, and site conditions to design the right Power to Compute path.',
+      zh: 'BAAS 可以结合您的电力约束、AI 部署计划和场站条件，设计合适的电力到算力路径。',
     },
   },
 }
@@ -428,7 +554,7 @@ export const seo = {
       zh: 'BAAS ENERGY 是面向 AI 算力基础设施的能源操作系统公司，提供智能配电网关、模块化能源舱和算力能源调度平台。',
     },
   },
-  platform: { title: 'Platform | BAAS ENERGY', description: home.platform.body },
+  platform: { title: 'Power to Compute | BAAS ENERGY', description: powerToCompute.hero.body },
   products: { title: 'Products | BAAS ENERGY', description: products[0].summary },
   solutions: { title: 'Solutions | BAAS ENERGY', description: solutions[0].intro },
   partners: { title: 'Partners | BAAS ENERGY', description: partnerTypes[0].body },

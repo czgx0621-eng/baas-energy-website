@@ -1,8 +1,7 @@
 <script setup>
 import { ArrowRight, ArrowUpRight } from '@lucide/vue'
 import CtaBand from '../components/CtaBand.vue'
-import DashboardMockup from '../components/DashboardMockup.vue'
-import EnergyFlow from '../components/EnergyFlow.vue'
+import PowerToComputeDemo from '../components/PowerToComputeDemo.vue'
 import ProcessTimeline from '../components/ProcessTimeline.vue'
 import ProductFeature from '../components/ProductFeature.vue'
 import SectionIntro from '../components/SectionIntro.vue'
@@ -61,16 +60,7 @@ const { t } = useLanguage()
 
   <section class="platform-dark section-pad">
     <SectionIntro light :eyebrow="t(home.platform.eyebrow)" :title="t(home.platform.title)" :body="t(home.platform.body)" />
-    <EnergyFlow />
-    <div class="platform-dashboard-grid">
-      <div class="platform-copy">
-        <p class="eyebrow light">BAAS PowerFlex OS</p>
-        <h3>{{ t({ en: 'Operate energy as one coordinated system.', zh: '将能源作为统一协同系统运营。' }) }}</h3>
-        <p>{{ t({ en: 'Connect every layer from circuit-level power data to modular energy assets and multi-site orchestration.', zh: '连接从回路级用电数据到模块化能源资产和多站点调度的每一层。' }) }}</p>
-        <RouterLink to="/platform">{{ t({ en: 'Explore the platform', zh: '了解平台' }) }} <ArrowUpRight :size="18" /></RouterLink>
-      </div>
-      <DashboardMockup />
-    </div>
+    <PowerToComputeDemo />
   </section>
 
   <section class="products-editorial section-pad">
