@@ -16,7 +16,7 @@ const { t } = useLanguage()
     :eyebrow="t(powerToCompute.hero.eyebrow)"
     :title="t(powerToCompute.hero.title)"
     :body="t(powerToCompute.hero.body)"
-    image="/images/photos/power-to-compute-hero.png"
+    image="/images/photos/power-to-compute-hero.webp"
   />
 
   <section class="section-pad ptc-why-section">

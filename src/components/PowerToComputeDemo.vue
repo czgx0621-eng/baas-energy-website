@@ -33,7 +33,7 @@ const markers = [
   <div id="power-to-compute-demo" class="power-to-compute-demo ptc-photo-demo">
     <div class="ptc-photo-frame">
       <img
-        :src="assetPath('/images/photos/power-to-compute-daylight.png')"
+        :src="assetPath('/images/photos/power-to-compute-daylight.webp')"
         :alt="t({ en: 'Daytime AI data center connected with power infrastructure', zh: '白天数据中心与电力基础设施场站' })"
         loading="lazy"
       />

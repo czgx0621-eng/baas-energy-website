@@ -180,11 +180,11 @@ export const powerToCompute = {
       zh: '同一套电力到算力逻辑，可适配新建 AI 数据中心、既有高密度机房、IDC 改造、园区智算和边缘推理节点。',
     },
     items: [
-      { title: { en: 'AIDC', zh: 'AIDC' }, body: { en: 'Power capacity planning for new AI data center deployment.', zh: '面向新建 AI 数据中心的电力容量规划。' }, image: '/images/photos/hero-campus.png' },
-      { title: { en: 'High-density data facilities', zh: '高密度数据中心' }, body: { en: 'Energy layer support for higher rack density and backup requirements.', zh: '支撑更高机柜密度和备电要求的能源层。' }, image: '/images/photos/enterprise-ai-room.png' },
-      { title: { en: 'IDC GPU retrofit', zh: 'IDC GPU 改造' }, body: { en: 'A controlled path from legacy server loads to GPU workloads.', zh: '从传统服务器负载到 GPU 负载的可控升级路径。' }, image: '/images/photos/idc-retrofit.png' },
-      { title: { en: 'Campus AI compute', zh: '园区智算' }, body: { en: 'Coordinate distributed compute, storage, and campus energy assets.', zh: '协同分布式算力、储能和园区能源资产。' }, image: '/images/photos/campus-compute.png' },
-      { title: { en: 'Edge inference nodes', zh: '边缘推理节点' }, body: { en: 'Standardized power support for smaller distributed AI sites.', zh: '为小型分布式 AI 场站提供标准化电力支撑。' }, image: '/images/photos/edge-inference.png' },
+      { title: { en: 'AIDC', zh: 'AIDC' }, body: { en: 'Power capacity planning for new AI data center deployment.', zh: '面向新建 AI 数据中心的电力容量规划。' }, image: '/images/photos/hero-campus.webp' },
+      { title: { en: 'High-density data facilities', zh: '高密度数据中心' }, body: { en: 'Energy layer support for higher rack density and backup requirements.', zh: '支撑更高机柜密度和备电要求的能源层。' }, image: '/images/photos/enterprise-ai-room.webp' },
+      { title: { en: 'IDC GPU retrofit', zh: 'IDC GPU 改造' }, body: { en: 'A controlled path from legacy server loads to GPU workloads.', zh: '从传统服务器负载到 GPU 负载的可控升级路径。' }, image: '/images/photos/idc-retrofit.webp' },
+      { title: { en: 'Campus AI compute', zh: '园区智算' }, body: { en: 'Coordinate distributed compute, storage, and campus energy assets.', zh: '协同分布式算力、储能和园区能源资产。' }, image: '/images/photos/campus-compute.webp' },
+      { title: { en: 'Edge inference nodes', zh: '边缘推理节点' }, body: { en: 'Standardized power support for smaller distributed AI sites.', zh: '为小型分布式 AI 场站提供标准化电力支撑。' }, image: '/images/photos/edge-inference.webp' },
     ],
   },
   cta: {
@@ -259,7 +259,7 @@ export const architecture = [
     number: '01',
     name: 'BAAS Energy Gateway',
     label: { en: 'The site-level energy data and control entry point.', zh: '站点级能源数据与控制入口。' },
-    image: '/images/photos/gateway-cabinet.png',
+    image: '/images/photos/gateway-cabinet.webp',
     bullets: {
       en: ['Circuit-level monitoring', 'Power quality visibility', 'UPS/BESS integration'],
       zh: ['回路级用电监测', '电能质量可视化', 'UPS / 储能接入'],
@@ -269,7 +269,7 @@ export const architecture = [
     number: '02',
     name: 'BAAS AI Energy Pod',
     label: { en: 'A modular energy pod for capacity, backup, peak shaving, and flexibility.', zh: '用于容量、备电、削峰和能源灵活性的模块化能源舱。' },
-    image: '/images/photos/energy-pod.png',
+    image: '/images/photos/energy-pod.webp',
     bullets: {
       en: ['Battery energy storage', 'Power conversion', 'Fast modular deployment'],
       zh: ['储能系统', '电力转换', '快速模块化部署'],
@@ -279,7 +279,7 @@ export const architecture = [
     number: '03',
     name: 'BAAS PowerFlex OS',
     label: { en: 'The orchestration layer between compute, power, storage, and the grid.', zh: '连接算力、电力、储能与电网的调度平台。' },
-    image: '/images/photos/operations-center.png',
+    image: '/images/photos/operations-center.webp',
     bullets: {
       en: ['Energy optimization', 'Storage dispatch', 'DR/VPP readiness'],
       zh: ['能源优化', '储能调度', '需求响应 / VPP 准备'],
@@ -291,7 +291,7 @@ export const products = [
   {
     slug: 'energy-gateway',
     name: 'BAAS Energy Gateway',
-    image: '/images/photos/gateway-cabinet.png',
+    image: '/images/photos/gateway-cabinet.webp',
     eyebrow: { en: 'Observe & connect', zh: '观测与连接' },
     title: { en: 'The power intelligence layer for AI compute sites.', zh: 'AI 算力站点的能源智能入口。' },
     summary: {
@@ -314,7 +314,7 @@ export const products = [
   {
     slug: 'ai-energy-pod',
     name: 'BAAS AI Energy Pod',
-    image: '/images/photos/energy-pod.png',
+    image: '/images/photos/energy-pod.webp',
     eyebrow: { en: 'Deploy & support', zh: '部署与支撑' },
     title: { en: 'Modular energy capacity for distributed AI infrastructure.', zh: '面向分布式 AI 基础设施的模块化能源容量。' },
     summary: {
@@ -337,7 +337,7 @@ export const products = [
   {
     slug: 'powerflex-os',
     name: 'BAAS PowerFlex OS',
-    image: '/images/photos/operations-center.png',
+    image: '/images/photos/operations-center.webp',
     eyebrow: { en: 'Orchestrate & optimize', zh: '调度与优化' },
     title: { en: 'Compute-energy orchestration for AI infrastructure.', zh: 'AI 基础设施的算力能源调度平台。' },
     summary: {
@@ -362,7 +362,7 @@ export const products = [
 export const solutions = [
   {
     slug: 'enterprise-ai-rooms',
-    image: '/images/photos/enterprise-ai-room.png',
+    image: '/images/photos/enterprise-ai-room.webp',
     title: { en: 'Enterprise AI Rooms', zh: '企业 AI 机房' },
     tagline: { en: 'Power intelligence before GPU expansion.', zh: '在 GPU 扩容之前，先建立能源智能。' },
     intro: {
@@ -384,7 +384,7 @@ export const solutions = [
   },
   {
     slug: 'idc-gpu-retrofit',
-    image: '/images/photos/idc-retrofit.png',
+    image: '/images/photos/idc-retrofit.webp',
     title: { en: 'IDC GPU Retrofit', zh: '旧 IDC GPU 改造' },
     tagline: { en: 'Upgrade legacy power for high-density AI.', zh: '升级老旧电力系统，支撑高密度 AI。' },
     intro: {
@@ -406,7 +406,7 @@ export const solutions = [
   },
   {
     slug: 'campus-ai-compute',
-    image: '/images/photos/campus-compute.png',
+    image: '/images/photos/campus-compute.webp',
     title: { en: 'Campus AI Compute', zh: '园区智算节点' },
     tagline: { en: 'Coordinate compute, storage, and site energy.', zh: '协同算力、储能与园区能源。' },
     intro: {
@@ -428,7 +428,7 @@ export const solutions = [
   },
   {
     slug: 'edge-ai-inference',
-    image: '/images/photos/edge-inference.png',
+    image: '/images/photos/edge-inference.webp',
     title: { en: 'Edge AI Inference', zh: '边缘 AI 推理节点' },
     tagline: { en: 'Standardized energy for resilient edge deployment.', zh: '以标准化能源支撑可靠的边缘部署。' },
     intro: {

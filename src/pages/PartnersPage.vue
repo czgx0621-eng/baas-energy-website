@@ -15,7 +15,7 @@ const { t } = useLanguage()
     :eyebrow="t({ en: 'Partners', zh: '合作伙伴' })"
     :title="t({ en: 'Power the next generation of AI infrastructure with BAAS.', zh: '与 BAAS 一起为下一代 AI 基础设施提供能源能力。' })"
     :body="t({ en: 'BAAS is designed to work with the broader AI infrastructure and energy ecosystem.', zh: 'BAAS 面向 AI 基础设施和能源生态开放协作。' })"
-    image="/images/photos/partners-engineering.png"
+    image="/images/photos/partners-engineering.webp"
   />
 
   <section class="section-pad">
@@ -36,7 +36,7 @@ const { t } = useLanguage()
 
   <section class="partner-model section-pad">
     <div class="editorial-media">
-      <img :src="assetPath('/images/photos/idc-retrofit.png')" alt="Engineers delivering AI energy infrastructure" loading="lazy" />
+      <img :src="assetPath('/images/photos/idc-retrofit.webp')" alt="Engineers delivering AI energy infrastructure" loading="lazy" />
     </div>
     <div>
       <p class="eyebrow light">{{ t({ en: 'Partner-ready integration', zh: '面向伙伴的开放集成' }) }}</p>

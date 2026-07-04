@@ -5,6 +5,7 @@ dist/
 *.log
 backup-*/
 saved-versions/
+source-assets/
 *.tmp
 /*.png
 /*.jpg

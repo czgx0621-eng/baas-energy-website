@@ -14,7 +14,7 @@ const { t } = useLanguage()
     :eyebrow="t({ en: 'Products', zh: '产品' })"
     :title="t({ en: 'The physical and software layers of the Energy OS.', zh: 'Energy OS 的实体层与软件层。' })"
     :body="t({ en: 'Intelligent gateways. Modular energy pods. Compute-energy orchestration.', zh: '智能网关、模块化能源舱、算力能源调度平台。' })"
-    image="/images/photos/gateway-cabinet.png"
+    image="/images/photos/gateway-cabinet.webp"
   />
   <section class="products-editorial section-pad">
     <SectionIntro

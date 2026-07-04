@@ -31,7 +31,7 @@ function submit() {
     :eyebrow="t({ en: 'Contact / Pilot', zh: '联系 / 试点' })"
     :title="t(contact.title)"
     :body="t(contact.body)"
-    image="/images/photos/edge-inference.png"
+    image="/images/photos/edge-inference.webp"
   />
 
   <section class="contact-layout section-pad">

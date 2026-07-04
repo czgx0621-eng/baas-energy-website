@@ -13,7 +13,7 @@ const { t } = useLanguage()
     :eyebrow="t(companyIntro.eyebrow)"
     :title="t(companyIntro.title)"
     :body="t(companyIntro.intro)"
-    image="/images/photos/hero-campus.png"
+    image="/images/photos/hero-campus.webp"
   />
 
   <section class="about-mission section-pad">
@@ -42,7 +42,7 @@ const { t } = useLanguage()
   </section>
 
   <section class="about-image-band">
-    <img :src="assetPath('/images/photos/operations-center.png')" alt="Energy operations center" loading="lazy" />
+    <img :src="assetPath('/images/photos/operations-center.webp')" alt="Energy operations center" loading="lazy" />
     <div>
       <p>{{ t({ en: 'Deployable', zh: '可部署' }) }}</p>
       <p>{{ t({ en: 'Operable', zh: '可运营' }) }}</p>
