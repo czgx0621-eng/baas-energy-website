@@ -1,27 +1,29 @@
-import { computed, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 
-const initialLanguage = typeof localStorage === 'undefined' ? 'en' : localStorage.getItem('baas-lang') || 'en'
-const language = ref(initialLanguage === 'zh' ? 'zh' : 'en')
+const language = ref('en')
 
-watch(language, (value) => {
-  if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('baas-lang', value)
-  }
-  if (typeof document !== 'undefined') {
-    document.documentElement.lang = value === 'zh' ? 'zh-CN' : 'en'
-  }
-}, { immediate: true })
+if (typeof localStorage !== 'undefined') {
+  localStorage.setItem('baas-lang', 'en')
+}
+
+if (typeof document !== 'undefined') {
+  document.documentElement.lang = 'en'
+}
 
 export function useLanguage() {
-  const isZh = computed(() => language.value === 'zh')
-  const t = (entry) => entry?.[language.value] ?? entry?.en ?? ''
-
-  function toggleLanguage() {
-    language.value = language.value === 'en' ? 'zh' : 'en'
+  const isZh = computed(() => false)
+  const t = (entry) => {
+    if (typeof entry === 'string') return entry
+    if (!entry || typeof entry !== 'object') return ''
+    return entry.en ?? ''
   }
 
-  function setLanguage(value) {
-    language.value = value === 'zh' ? 'zh' : 'en'
+  function toggleLanguage() {
+    language.value = 'en'
+  }
+
+  function setLanguage() {
+    language.value = 'en'
   }
 
   return {

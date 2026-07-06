@@ -1,12 +1,12 @@
 <script setup>
 import { ref } from 'vue'
-import { Globe2, Menu, X } from '@lucide/vue'
+import { Menu, X } from '@lucide/vue'
 import { brand, navItems, ui } from '../data/siteContent'
 import { useLanguage } from '../composables/useLanguage'
 import { assetPath } from '../utils/assets'
 
 const open = ref(false)
-const { isZh, t, toggleLanguage } = useLanguage()
+const { t } = useLanguage()
 
 function scrollToTop() {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
@@ -32,10 +32,6 @@ function close() {
     </nav>
 
     <div class="header-actions">
-      <button class="icon-text-button" type="button" @click="toggleLanguage">
-        <Globe2 :size="16" />
-        <span>{{ isZh ? 'EN' : '中文' }}</span>
-      </button>
       <RouterLink class="header-contact" to="/contact" @click="scrollToTop">{{ t(ui.contact) }}</RouterLink>
       <button class="menu-button" type="button" aria-label="Toggle navigation" @click="open = !open">
         <X v-if="open" :size="20" />
